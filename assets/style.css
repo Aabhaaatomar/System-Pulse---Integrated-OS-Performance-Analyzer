@@ -1,0 +1,139 @@
+/* SystemPulse - Modern Dark Dashboard Styling */
+
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap');
+
+html, body, [class*="css"] {
+    font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+    color: #F3F4F6;
+}
+
+code, kbd, samp, pre {
+    font-family: 'JetBrains Mono', monospace;
+}
+
+.stApp {
+    background-color: #0B1120;
+    color: #F3F4F6;
+}
+
+/* Sidebar styling */
+section[data-testid="stSidebar"] {
+    background-color: #0F172A;
+    border-right: 1px solid #1E293B;
+}
+
+/* Metric Card */
+.metric-card {
+    background: #111827;
+    border: 1px solid #1F2937;
+    border-radius: 10px;
+    padding: 1.1rem 1.2rem;
+    margin-bottom: 0.8rem;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.2);
+    transition: transform 0.15s ease, border-color 0.15s ease;
+}
+
+.metric-card:hover {
+    border-color: #374151;
+    transform: translateY(-2px);
+}
+
+.metric-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.4rem;
+}
+
+.metric-title {
+    font-size: 0.82rem;
+    font-weight: 600;
+    color: #9CA3AF;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+}
+
+.metric-val {
+    font-size: 2rem;
+    font-weight: 800;
+    line-height: 1.1;
+    color: #FFFFFF;
+}
+
+.metric-sub {
+    font-size: 0.8rem;
+    color: #6B7280;
+    margin-top: 0.35rem;
+}
+
+/* Status Badges */
+.badge {
+    display: inline-block;
+    padding: 0.2rem 0.6rem;
+    font-size: 0.72rem;
+    font-weight: 700;
+    border-radius: 9999px;
+    text-transform: uppercase;
+}
+
+.badge-success {
+    background-color: rgba(34, 197, 94, 0.15);
+    color: #4ADE80;
+    border: 1px solid rgba(34, 197, 94, 0.3);
+}
+
+.badge-warning {
+    background-color: rgba(245, 158, 11, 0.15);
+    color: #FBBF24;
+    border: 1px solid rgba(245, 158, 11, 0.3);
+}
+
+.badge-danger {
+    background-color: rgba(239, 68, 68, 0.15);
+    color: #F87171;
+    border: 1px solid rgba(239, 68, 68, 0.3);
+}
+
+/* Progress bar */
+.pulse-prog-bg {
+    width: 100%;
+    height: 6px;
+    background: #1F2937;
+    border-radius: 9999px;
+    overflow: hidden;
+    margin-top: 0.5rem;
+}
+
+.pulse-prog-fill {
+    height: 100%;
+    border-radius: 9999px;
+}
+
+/* Recommendation Box */
+.rec-card {
+    background: #111827;
+    border: 1px solid #1F2937;
+    border-radius: 8px;
+    padding: 1rem 1.2rem;
+    margin-bottom: 0.8rem;
+}
+
+.rec-card-warning {
+    border-left: 4px solid #F59E0B;
+}
+
+.rec-card-success {
+    border-left: 4px solid #22C55E;
+}
+
+/* Viva Info Box */
+.viva-box {
+    background: #0F172A;
+    border: 1px solid #1E293B;
+    border-left: 3px solid #6366F1;
+    border-radius: 6px;
+    padding: 0.8rem 1rem;
+    margin: 0.8rem 0;
+    font-size: 0.85rem;
+    color: #CBD5E1;
+}
