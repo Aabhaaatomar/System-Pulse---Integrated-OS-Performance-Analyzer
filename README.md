@@ -1,10 +1,5 @@
 # SystemPulse — Integrated OS Performance Analyzer
-### Operating Systems Capstone Project | B.Tech Computer Science & Engineering
-
-![Python](https://img.shields.io/badge/Python-3.9%2B-blue?logo=python)
-![Streamlit](https://img.shields.io/badge/Streamlit-1.30%2B-FF4B4B?logo=streamlit)
-![Platform](https://img.shields.io/badge/Platform-Windows%20%7C%20Linux%20%7C%20macOS-informational)
-![Tests](https://img.shields.io/badge/Tests-Passing%20(9%2F9)-success)
+### Operating Systems Capstone Project | B.Tech CSE Data Science
 
 ---
 
@@ -174,7 +169,11 @@ The tests verify:
 
 ---
 
-## 8. Viva & Presentation Questions Guide (For Capstone Defense)
+## 8. Live Demo
+
+- **Preview**: https://system-pulse---integrated-os-performance-analyzer-boza6ftsxlle.streamlit.app/
+
+## 9. Viva & Presentation Questions Guide (For Capstone Defense)
 
 **Q1: How does SystemPulse obtain real CPU metrics without using simulated data?**
 > **Answer**: SystemPulse uses the `psutil` library, which interacts directly with OS kernel APIs. On Windows, it queries the Windows Performance Counters and NtQuerySystemInformation API; on Linux, it reads `/proc/stat`.
@@ -193,5 +192,3 @@ The tests verify:
 
 ---
 
-## 9. License
-Academic Capstone Project — B.Tech Computer Science & Engineering. MIT License.
