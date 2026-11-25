@@ -173,22 +173,9 @@ The tests verify:
 
 - **Preview**: https://system-pulse---integrated-os-performance-analyzer-boza6ftsxlle.streamlit.app/
 
-## 9. Viva & Presentation Questions Guide (For Capstone Defense)
+---
 
-**Q1: How does SystemPulse obtain real CPU metrics without using simulated data?**
-> **Answer**: SystemPulse uses the `psutil` library, which interacts directly with OS kernel APIs. On Windows, it queries the Windows Performance Counters and NtQuerySystemInformation API; on Linux, it reads `/proc/stat`.
-
-**Q2: What is the difference between "Used RAM" and "Available RAM"?**
-> **Answer**: "Used RAM" is the physical memory allocated to active process working sets. "Available RAM" is the amount of memory that can be immediately allocated to new processes without requiring swapping to disk (it includes free memory plus reclaimable page cache and buffers).
-
-**Q3: How does the application handle permission errors when scanning processes?**
-> **Answer**: System processes and processes owned by other users or the kernel are protected by OS privilege rings. When `psutil` attempts to read these processes, it raises `psutil.AccessDenied`. SystemPulse wraps process enumeration inside `try...except (psutil.NoSuchProcess, psutil.AccessDenied)` blocks to ensure smooth operation without crashes.
-
-**Q4: How does SystemPulse identify the root cause of high resource usage?**
-> **Answer**: In Module 4 (`alerts.py`), when CPU or RAM utilization crosses the configured threshold, SystemPulse filters and sorts the active process list to identify the specific process consuming the highest percentage of that resource, surfacing its PID and executable name in the recommendation card.
-
-**Q5: Why is time-series logging to CSV useful in Operating Systems monitoring?**
-> **Answer**: Instantaneous snapshots do not reveal trends. Recording periodic samples into CSV enables historical capacity planning, identification of memory leaks (steady upward drift in RAM consumption), and analysis of transient CPU spikes.
+## 9. Team Members : Aabha Tomar and Simran
 
 ---
 
